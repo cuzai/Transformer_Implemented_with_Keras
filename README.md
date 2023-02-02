@@ -1,10 +1,11 @@
 # Transformer Implemented with Tensorflow/Keras
 ## 1. Objective: Implement Transformer from scratch using Tensorflow/Keras
- - Transformer is one of the most critical back bone architecture for SOTA NLP models (BERT, GPT...)
- - Above can be applied not only to NLP problems but also to any other sequential data forecasting problems
+ - Transformer is one of the most critical back bone architecture for SOTA NLP models. (BERT, GPT...)
+ - Above can be applied not only to NLP problems but also to any other sequential data forecasting problems.
  - Rather than using existing libraries such as `torch.nn.Transformer` or `huggingface.transformer`, I decided to implement it from scratch because of two reasons below.
    - It will help me understand transformer much deeper.
-   - It allows much more customization so I can make the model best fit to any other situations(or problems).
+   - It allows more rooms for customization so I can make the model best fit to any other situations(or problems).
+ - If you need more details about the code structure, kindly refer to `Transformer` folder.
 
 ## 2. Usage
  - It seems there is no existing transformer related layer or model implemented with Tensorflow/Keras so hopefully this code would help somebody in trouble with using transformer with Tensorflow/Keras.  

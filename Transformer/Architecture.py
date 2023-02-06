@@ -138,7 +138,7 @@ class Decoder(tf.keras.layers.Layer):
         attentioned_output1 = self.dropout1(attentioned_output1, training=training)
         attentioned_output1 = self.layer_norm1(attentioned_output1 + embedded_input)
 
-        attentioned_output2 = self.multihead_attention(embedded_input, enc_output, enc_output, padding_mask)
+        attentioned_output2 = self.multihead_attention(attentioned_output1, enc_output, enc_output, padding_mask)
         attentioned_output2 = self.dropout2(attentioned_output2, training=training)
         attentioned_output2 = self.layer_norm2(attentioned_output1 + attentioned_output2)
 
